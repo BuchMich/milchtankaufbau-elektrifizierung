@@ -1208,6 +1208,9 @@
         <div class="card reveal">
           <div class="card-icon" style="display:none">🚛</div>
           <h3>MAN eTGS 6×2-5</h3>
+          <div style="margin:0.8rem -1.5rem 1rem;overflow:hidden;background:#f5f5f5;cursor:zoom-in;" onclick="document.getElementById('lightbox').style.display='flex'">
+            <img src="man-etgs.jpg" alt="MAN eTGS Chassis" style="width:100%;display:block;object-fit:contain;max-height:160px;padding:0.5rem 0;">
+          </div>
           <p data-de="Gewählter Elektro-LKW nach Vergleich mit Volvo FE Electric und Mercedes E-Actros. Bietet eine HV-Schnittstelle (ePTO) und eine Hauptbatterie mit 466 kWh Kapazität."
             data-en="Selected electric truck after comparison with Volvo FE Electric and Mercedes E-Actros. Provides a HV interface (ePTO) and a main battery with 466 kWh capacity.">
             Gewählter Elektro-LKW nach Vergleich mit Volvo FE Electric und Mercedes E-Actros. Bietet eine
@@ -1906,6 +1909,11 @@
     }, { threshold: 0.4 });
     sections.forEach(s => navObserver.observe(s));
   </script>
+
+  <!-- Lightbox -->
+  <div id="lightbox" onclick="this.style.display='none'" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.85);align-items:center;justify-content:center;cursor:zoom-out;">
+    <img src="man-etgs.jpg" alt="MAN eTGS Chassis" style="max-width:90vw;max-height:90vh;object-fit:contain;border-radius:8px;box-shadow:0 8px 48px rgba(0,0,0,0.6);">
+  </div>
 </body>
 
 </html>
